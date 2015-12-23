@@ -1,0 +1,50 @@
+{
+  "name": "www",
+  "version": "1.0.0",
+  "description": "A CMS based on material-ui & react-hot-boilerplate.",
+  "scripts": {
+    "start": "node server.js",
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cungen/www.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "cms",
+    "hot",
+    "reload",
+    "hmr",
+    "live",
+    "edit",
+    "webpack"
+  ],
+  "author": "Cungen <1360571582@qq.com> (http://github.com/cungen)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cungen/www/issues"
+  },
+  "homepage": "https://github.com/cungen/www",
+  "devDependencies": {
+    "babel-core": "^6.0.20",
+    "babel-eslint": "^4.1.3",
+    "babel-loader": "^6.0.1",
+    "babel-preset-es2015": "^6.0.15",
+    "babel-preset-react": "^6.0.15",
+    "babel-preset-stage-0": "^6.0.15",
+    "eslint-plugin-react": "^3.6.2",
+    "react-hot-loader": "^1.3.0",
+    "react-tap-event-plugin": "^0.2.1",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.1"
+  },
+  "dependencies": {
+    "history": "^1.13.1",
+    "material-ui": "^0.13.4",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "react-router": "^1.0.2"
+  }
+}
