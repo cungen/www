@@ -41,8 +41,7 @@ export default class App extends Component {
             popItem: {
                 position: 'relative',
                 width: '33.33%',
-                height: 100,
-                backgroundColor: Colors.green200
+                height: 100
             }
         };
         const anchorOrigin = {

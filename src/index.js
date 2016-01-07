@@ -8,6 +8,7 @@ import About from './about';
 import Aside from './aside';
 import TaskList from './tasks/task-list';
 import SkillList from './skills/skill-item';
+import AppList from './apps/app-list';
 
 injectTapEventPlugin();
 
@@ -19,6 +20,7 @@ render((
             <Route path="login" component={About} />
             <Route path="tasks" component={TaskList} />
             <Route path="skills" component={SkillList} />
+            <Route path="apps" component={AppList} />
         </Route>
     </Router>
 ), document.getElementById('root'));

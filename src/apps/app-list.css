@@ -1,0 +1,14 @@
+.root {
+    width: 320px;
+    padding: 35px 30px;
+    border: 1px solid lightblue
+}
+.item {
+    display: inline-block;
+    width: 85px;
+    height: 85px;
+    text-align: center;
+}
+.item:hover {
+    border: 1px solid lightgray;
+}
