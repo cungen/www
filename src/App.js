@@ -89,7 +89,7 @@ export default class App extends Component {
                     } />
                 <div style={styles.content}>
                     {this.props.children}
-                    <Editor />
+                    {false && <Editor />}
                 </div>
             </div>
         );
