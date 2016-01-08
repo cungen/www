@@ -5,6 +5,8 @@ import IconButton from 'material-ui/lib/icon-button';
 import MenuItem from 'material-ui/lib/menus/menu-item';
 import Popover from 'material-ui/lib/popover/popover';
 import RaisedButton from 'material-ui/lib/raised-button';
+import { Toolbar, ToolbarGroup, ToolbarSeparator, ToolbarTitle } from 'material-ui/lib/toolbar/index';
+import FlatButton from 'material-ui/lib/flat-button';
 import TouchRipple from 'material-ui/lib/ripples/touch-ripple';
 import NavigationApps from 'material-ui/lib/svg-icons/navigation/apps';
 import SocialPerson from 'material-ui/lib/svg-icons/social/person';
@@ -12,6 +14,7 @@ import ActionHome from 'material-ui/lib/svg-icons/action/home';
 import Colors from 'material-ui/lib/styles/colors';
 
 import Editor from './editor/editor';
+import AppList from './apps/app-list';
 
 export default class App extends Component {
     constructor() {
@@ -68,14 +71,7 @@ export default class App extends Component {
                                      anchorOrigin={anchorOrigin}
                                      targetOrigin={targetOrigin}
                                      onRequestClose={this.closePopover.bind(this, 'pop')} >
-                                <div style={styles.popMenu}>
-                                    <div style={styles.popItem}>
-                                        <TouchRipple>
-                                            <ActionHome />
-                                            <p>Blabla</p>
-                                        </TouchRipple>
-                                    </div>
-                                </div>
+                                <AppList />
                             </Popover>
                             <IconMenu iconButtonElement={
                               <IconButton><SocialPerson color={Colors.white} /></IconButton>
@@ -87,6 +83,12 @@ export default class App extends Component {
                         </div>
                     } />
                 <div style={styles.content}>
+                    <Toolbar>
+                        <ToolbarGroup firstChild={true} float='left'>
+                            <ToolbarTitle text='Options' />
+                            <FlatButton label='PRIMARY' />
+                        </ToolbarGroup>
+                    </Toolbar>
                     {this.props.children}
                     {false && <Editor />}
                 </div>

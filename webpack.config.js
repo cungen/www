@@ -1,6 +1,5 @@
 var path = require('path');
 var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     devtool: 'eval',
@@ -19,15 +18,14 @@ module.exports = {
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
-        new ExtractTextPlugin('style.css')
+        new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js')
     ],
     module: {
         loaders: [
             { test: /\.js$/, loaders: ['react-hot', 'babel'], include: path.join(__dirname, 'src') },
             {
                 test: /\.css$/,
-                loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]')
+                loader: 'style!css'
             }
         ]
     }
