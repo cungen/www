@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Colors from 'material-ui/lib/styles/colors';
 import ActionDashboard from 'material-ui/lib/svg-icons/action/dashboard';
 import ActionLoyalty from 'material-ui/lib/svg-icons/action/loyalty';
+import ActionPets from 'material-ui/lib/svg-icons/action/pets';
 import ImageStyle from 'material-ui/lib/svg-icons/image/style';
 import ImagePalette from 'material-ui/lib/svg-icons/image/palette';
 import TouchRipple from 'material-ui/lib/ripples/touch-ripple';
@@ -24,7 +25,12 @@ export default class AppList extends Component {
                     </TouchRipple>
                 </div>
                 <div className={styles.item}>
-                    <TouchRipple color={Colors.cyan200}>
+                    <TouchRipple color={Colors.pink200}>
+                        <ActionPets color={Colors.blueGrey200} style={{width: 42, height: 56}}/>
+                        <span>足迹</span>
+                    </TouchRipple>
+                </div>
+                <div className={styles.item}> <TouchRipple color={Colors.cyan200}>
                         <ImageStyle color={Colors.cyan200} style={{width: 42, height: 56}}/>
                         <span>片段</span>
                     </TouchRipple>

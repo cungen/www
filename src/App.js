@@ -59,6 +59,7 @@ export default class App extends Component {
             <div>
                 <AppBar
                     title="App"
+                    showMenuIconButton={false}
                     children={
                         <div style={styles.rightMenu}>
                             <IconButton
@@ -67,26 +68,25 @@ export default class App extends Component {
                                 <NavigationApps color={Colors.white} />
                             </IconButton>
                             <Popover open={this.state.activePopover === 'pop'}
-                                     anchorEl={this.state.anchorEl}
-                                     anchorOrigin={anchorOrigin}
-                                     targetOrigin={targetOrigin}
-                                     onRequestClose={this.closePopover.bind(this, 'pop')} >
+                                anchorEl={this.state.anchorEl}
+                                anchorOrigin={anchorOrigin}
+                                targetOrigin={targetOrigin}
+                                onRequestClose={this.closePopover.bind(this, 'pop')} >
                                 <AppList />
                             </Popover>
                             <IconMenu iconButtonElement={
-                              <IconButton><SocialPerson color={Colors.white} /></IconButton>
+                                <IconButton><SocialPerson color={Colors.white} /></IconButton>
                             }>
-                              <MenuItem primaryText="Refresh" />
-                              <MenuItem primaryText="Help" />
-                              <MenuItem primaryText="Sign out" />
+                                <MenuItem primaryText="Refresh" />
+                                <MenuItem primaryText="Help" />
+                                <MenuItem primaryText="Sign out" />
                             </IconMenu>
                         </div>
-                    } />
+                    }/>
                 <div style={styles.content}>
                     <Toolbar>
                         <ToolbarGroup firstChild={true} float='left'>
                             <ToolbarTitle text='Options' />
-                            <FlatButton label='PRIMARY' />
                         </ToolbarGroup>
                     </Toolbar>
                     {this.props.children}
