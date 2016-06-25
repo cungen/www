@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import {Router, Route, Link } from 'react-router';
+import {Router, Route, Link, IndexRoute } from 'react-router';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
 import App from './app';
@@ -19,6 +19,7 @@ injectTapEventPlugin();
 render((
     <Router>
         <Route path='/' component={App} >
+            <IndexRoute component={Index} />
             <Route path="index" component={Index} />
             <Route path="Todo" component={About} />
             <Route path="aside" component={Aside} />

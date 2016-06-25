@@ -8,7 +8,7 @@ export default class Categories extends Component {
     render() {
         const styles = {
             root: {
-                width: 256
+                width: '100%'
             }
         };
 

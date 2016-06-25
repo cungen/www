@@ -13,7 +13,7 @@ export default class Post extends Component {
     render() {
         const styles = {
             root: {
-                width: 800,
+                width: '100%',
                 margin: '0 auto'
             },
             date: {

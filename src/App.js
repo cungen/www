@@ -58,10 +58,11 @@ export default class App extends Component {
         return (
             <div>
                 <AppBar
-                    title="App"
+                    title="Cungen"
                     showMenuIconButton={false}
                     children={
                         <div style={styles.rightMenu}>
+                            <FlatButton label="About" primary={true} style={{verticalAlign: 'super'}} />
                             <IconButton
                                 ref="menuButton"
                                 onClick={this.show.bind(this, 'pop')}>
@@ -84,7 +85,7 @@ export default class App extends Component {
                         </div>
                     }/>
                 <div style={styles.content}>
-                    <Toolbar>
+                    <Toolbar style={{backgroundColor: Colors.white}}>
                         <ToolbarGroup firstChild={true} float='left'>
                             <ToolbarTitle text='Options' />
                         </ToolbarGroup>
