@@ -4,7 +4,7 @@
   "description": "A CMS based on material-ui & react-hot-boilerplate.",
   "scripts": {
     "start": "webpack-dev-server --colors --progress",
-    "build": "webpack -p --config webpack.production.config.js",
+    "build": "NODE_ENV=production webpack -p --colors --progress",
     "lint": "eslint src"
   },
   "repository": {

@@ -64,7 +64,7 @@ config.module = {
         exclude: /(node_modules|bower_components)/
     }, {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style', 'css!postcss')
+        loader: ExtractTextPlugin.extract('style', 'css?modules&localIdentName=[name]---[local]---[hash:base64:5]!postcss')
     }, {
         test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)(\?\w+)?$/,
         loader: 'file'
