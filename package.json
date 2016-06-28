@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A CMS based on material-ui & react-hot-boilerplate.",
   "scripts": {
-    "start": "webpack-dev-server --colors --progress --inline --hot",
+    "start": "webpack-dev-server --colors --progress --inline",
     "build": "NODE_ENV=production webpack -p --colors --progress",
     "lint": "eslint src"
   },
@@ -58,6 +58,7 @@
     "react-tap-event-plugin": "^1.0.0",
     "redux": "^3.5.2",
     "redux-thunk": "^2.1.0",
+    "sass-loader": "^4.0.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1"
   }
