@@ -67,7 +67,7 @@ config.module = {
         loader: ExtractTextPlugin.extract('style', 'css?modules&localIdentName=[name]---[local]---[hash:base64:5]!postcss')
     }, {
         test: /\.sass$/,
-        loader: ExtractTextPlugin.extract('style', 'css!postcss!sass')
+        loader: ExtractTextPlugin.extract('style', 'css?modules&localIdentName=[name]---[local]---[hash:base64:5]!postcss!sass')
     }, {
         test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)(\?\w+)?$/,
         loader: 'file'
