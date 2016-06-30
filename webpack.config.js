@@ -1,17 +1,14 @@
-'use strict';
-
 var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var env = process.env.NODE_ENV || 'development';
-var PORT = '8081';
+var PORT = '8082';
 
 var DEV = env === 'development';
 var entryPath = path.join(__dirname, 'src');
 var outPath = path.join(__dirname, 'dist');
-
 
 var config = {};
 
@@ -39,8 +36,8 @@ config.output = {
 config.plugins = [
     new HtmlWebpackPlugin({
         template: path.join(entryPath, 'index.html'),
-        hash: false,
         favicon: path.join(entryPath, 'static/favicon.ico'),
+        hash: false,
         filename: 'index.html',
         inject: 'body',
         minify: {
@@ -73,8 +70,6 @@ config.module = {
         loader: 'file'
     }]
 };
-
-
 
 if (DEV) {
     config.plugins.push(
