@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的存储小站</title>
+    <meta name="author" content="Jack,cungen.jiang@qq.com">
+    <meta name="description" content="我的存储小站，记录我的生活">
+    <meta name="keywords" content="Cungen,博客,存储小站,U工具,优工具,Nas">
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.2.0-beta1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.2.0-beta1/css/bootstrap-utilities.min.css"
+        rel="stylesheet">
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            padding: 2vh 10vw;
+            background: #000;
+            font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+            color: #333;
+            --primary-color: #0dcaf0;
+            --anchor-color: #999;
+        }
+
+        a {
+            color: var(--anchor-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .content {
+            width: 80%;
+            min-width: 400px;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 16px 0;
+            padding: 0.7em 1.5em;
+            border-radius: 16px;
+            min-height: 60px;
+            background-color: rgba(0, 0, 0, 0.07);
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.09);
+        }
+
+        .box-row {
+            flex-direction: row;
+        }
+
+        .box-title {
+            font-size: 12px;
+            margin: 4px 0 4px;
+            opacity: 0.8;
+            text-align: center;
+        }
+
+        .beian {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .beian img {
+            margin-right: 8px;
+            margin-left: 16px;
+        }
+
+        h1,
+        h2 {
+            margin: 0;
+            color: var(--primary-color);
+        }
+
+        h1 {
+            margin: 16px 0 8px;
+            /* font-size: 21px; */
+            line-height: 1.19048;
+            font-weight: 500;
+        }
+
+        h2 {
+            font-size: 28px;
+            line-height: 1.125;
+            font-weight: 500;
+            margin: 16px 0;
+            letter-spacing: .004em;
+        }
+
+        h1+h2 {
+            margin-top: 0;
+            margin-bottom: 4px;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .nav .nav-link {
+            color: var(--anchor-color);
+            padding: 0 16px;
+        }
+
+        .nav .nav-link:hover {
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content box header">
+        <h1>我的存储小站</h1>
+        <h2 class="text-secondary">Eden of sparda. The story of me.</h2>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="https://iamroot.cn" target="_blank">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="https://cloud.iamroot.cn" target="_blank">Cloud</a>
+            </li>
+        </ul>
+    </div>
+    <div class="content box">
+        <section>
+            <h2>简介</h2>
+            <p>
+                存根的博客，我自己的存储小站；
+            </p>
+            <p>
+                大部分人都有一颗叛逆的心吧，但随着我们在社会中历练，我们却过得貌似越来越抑制自己；但这是成长的一部分，成熟的标志就是懂得人情世故，学会控制自我的情绪；但我还是希望我们每个人都有一片空间是属于自己的，在这个空间里，你可以尽情放肆，我希望这个小站是我的乐园，就像上面的英文一样Eden
+                of Sparda；
+            </p>
+            <p>
+                借《人世间》里的一句说，希望所有人能开心每一天，郑娟在秉坤出狱后和他说到自己是如何扛过他不在的这些日子，她说她在要崩溃的那天遇到了一个小女娃，那小女娃和她打招呼，那可爱的模样，让她开心了一天，我们每个人都一样，不可能永远是开心的，当我们不开心的时候，就想想之前开心的事，这样不开心的日子便不会那么难过了，而且不开心的日子总会过去，你当前的时刻永远不可能是最不开心的时候。
+            </p>
+        </section>
+        <section>
+            <h2>内容</h2>
+            <p>
+                该空间基本不会涉及政治相关的内容；主要跟技术相关，前端、Nas、可能有些AI的内容。
+            </p>
+        </section>
+        <section>
+            <h2>爱好的领域</h2>
+            <p>前端，Nas，私有云，AI</p>
+        </section>
+        <section>
+            <h2>近期动态</h2>
+            <p>折腾Nas中</p>
+        </section>
+
+    </div>
+    <div class="content beian box box-row">
+        <a href="https://beian.miit.gov.cn/" target="_blank">冀ICP备2022000825号-1</a>
+        <img src="https://iamroot.cn/content/images/2021/01/%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A0%87.png" />
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802038733">
+            京公网安备 11010802038733号
+        </a>
+    </div>
+    <script src="./js/ribbon.js"></script>
+</body>
+
+</html>
